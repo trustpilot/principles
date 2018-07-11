@@ -1,10 +1,11 @@
 # Trustpilot's Engineering Principles
 
 - **[Code Review Everything](#code-review-everything)**
+- **[Services First](#services-first)**
 - **[Encapsulate in contexts and expose APIs](#encapsulate-in-contexts-and-expose-apis)**
 - **[Serverless First](#serverless-first)**
 - **[Aim to Open Source](#aim-to-open-source)**
-- **[Services First](#services-first)**
+
 - **[Build smaller things](#build-smaller-things)**
 
 > **Breaking the Rules**
@@ -15,6 +16,13 @@
 All production code must be reviewed, even the most trivial. Commits should be optimized for code reviews and tell a story. “Pre-review” your code before requesting a review from your peers. Review requests should be handled promptly. Pairing for infrastructure or configuration changes is recommended. While the reviewer’s input is welcomed, in the end the author decides what suggestions to implement.
 
 *We do this because we believe that code reviews are an imperative tool to ship quality code. This includes finding issues with the code, but also sharing alternative approaches and learning new practices. It is also great to share knowledge, so that always more than just one person knows what happened. Simple changes usually require very little reviewing effort so try to take “everything” literally. And even small changes can have very negative impacts.*
+
+## Services First
+
+If there are 3rd party services (SaaS) that solve a problem - or most of it, we prefer using those.
+If those services are not good enough - or too expensive, we will research and use appropriate open source libraries. Only if that option doesn’t exist either, we build it ourselves.
+
+*We do this because we don’t want to reinvent the wheel every time we need a new service or library - focusing on our core business. On top of that, those service providers are experts in their domain and their services are battle tested by multiple customers. We usually can’t outperform them on multiple levels (e.g. cost, features, quality, time to market). Consider extending an existing open source library before building it from scratch yourself if parts are missing.*
 
 ## Encapsulate in contexts and expose APIs
 
@@ -36,13 +44,6 @@ Always apply open source best practices to all repositories, public and private 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
 *We have a company-wide [Open Source Policy](https://github.com/trustpilot/opensource) to guide you on how to use open source (especially in products).*
-
-## Services First
-
-If there are 3rd party services (SaaS) that solve a problem - or most of it, we prefer using those.
-If those services are not good enough - or too expensive, we will research and use appropriate open source libraries. Only if that option doesn’t exist either, we build it ourselves.
-
-*We do this because we don’t want to reinvent the wheel every time we need a new service or library - focusing on our core business. On top of that, those service providers are experts in their domain and their services are battle tested by multiple customers. We usually can’t outperform them on multiple levels (e.g. cost, features, quality, time to market). Consider extending an existing open source library before building it from scratch yourself if parts are missing.*
 
 ## Build smaller things
 
