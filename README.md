@@ -3,9 +3,10 @@
 - **[Code Review Everything](#code-review-everything)**
 - **[Services First](#services-first)**
 - **[Serverless First](#serverless-first)**
+- **[Build smaller things](#build-smaller-things)**
 - **[Encapsulate in contexts and expose APIs](#encapsulate-in-contexts-and-expose-apis)**
 - **[Aim to Open Source](#aim-to-open-source)**
-- **[Build smaller things](#build-smaller-things)**
+
 
 > **Breaking the Rules**
 > *Remember that all principles are generally meant as rules of Trustpilot Tech. If a particular principles isn’t appropriate to your situation - escalate it to your manager to explore alternatives, but this shouldn’t be the norm. Always use your common sense and best judgement.*
@@ -30,6 +31,14 @@ Virtual servers (EC2) are considered legacy and should be avoided.
 
 *We do this because we strongly believe that serverless (FaaS, BaaS, DBaaS) is the future of the cloud and we’d like to be on the forefront of that movement. Serverless might not necessarily be the right choice for everything today, but start your architecture discussions there. We’re in the process of fading out virtual servers (EC2) and want to avoid creating new ones. The benefits of serverless and containers over virtual servers are diverse: cost savings, better scaling, better orchestration, reduction of operational costs and  modernizing our cloud stack.*
 
+## Build smaller things
+
+Generally consider making smaller rather than larger systems, services, repositories, etc.
+
+*When building small, the project is easier to reason about, and the responsibility of a service is more clearly defined. It is easier to fix bugs, and easier to deploy.*
+*While there may be an overhead by making things too small, we have generally found that it’s much easier to combine things that are too small, than to take things apart that are too large. Combining is easier than splitting.*
+*It is perfectly fine to have multiple services and projects from the same context be in multiple repositories.*
+
 ## Encapsulate in contexts and expose APIs
 
 We divide ownership into contexts. The context concept encapsulates one or more services that are closely connected. The context is also the boundary of data ownership. This means that only services inside the context can directly work with the data it owns. The context exposes REST APIs to be be used by other contexts as well as our customers and third party services. For any API endpoint, consider first if it can be public, if not can it be private and only make it internal if none of the first two are possible.
@@ -43,11 +52,3 @@ Always apply open source best practices to all repositories, public and private 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
 *We have a company-wide [Open Source Policy](https://github.com/trustpilot/opensource) to guide you on how to use open source (especially in products).*
-
-## Build smaller things
-
-Generally consider making smaller rather than larger systems, services, repositories, etc.
-
-*When building small, the project is easier to reason about, and the responsibility of a service is more clearly defined. It is easier to fix bugs, and easier to deploy.*
-*While there may be an overhead by making things too small, we have generally found that it’s much easier to combine things that are too small, than to take things apart that are too large. Combining is easier than splitting.*
-*It is perfectly fine to have multiple services and projects from the same context be in multiple repositories.*
