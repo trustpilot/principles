@@ -1,4 +1,4 @@
-# Engineering Principles
+# Trustpilot's Engineering Principles
 
 - **[Code Review Everything](#code-review-everything)**
 - **[Encapsulate in contexts and expose APIs](#encapsulate-in-contexts-and-expose-apis)**
