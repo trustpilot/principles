@@ -35,7 +35,7 @@ Always apply open-source practices to private ([InnerSource](https://www.oreilly
 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
-*We have some [guidelines](https://github.com/trustpilot/wiki/blob/master/Open%20Source/Open%20Source%20Guidelines.md) on how to practically do an open source repository.*
+*We have a company-wide [Open Source Policy](https://github.com/trustpilot/opensource) to guide you on how to use open source (especially in products).*
 
 ## Services First
 
