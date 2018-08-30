@@ -50,5 +50,3 @@ We divide ownership into contexts. The context concept encapsulates one or more 
 Always apply open source best practices to all repositories, public and private ([Inner Source](https://en.wikipedia.org/wiki/Inner_source)). That typically includes a clear documentation (README) and code that isn’t tightly coupled to anything internally. Consider which pieces could be pulled out and open sourced (e.g. a general purpose library without any dependencies is a prime candidate to be open source).
 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
-
-*We have a company-wide [Open Source Policy](https://github.com/trustpilot/opensource) to guide you on how to use open source (especially in products).*
