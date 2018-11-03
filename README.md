@@ -26,10 +26,10 @@ If those services are not good enough - or too expensive, we will research and u
 
 ## Serverless First
 
-If serverless is not available or practical, containers are recommended.
-Virtual servers (EC2) are considered legacy and should be avoided.
+If Serverless is not available or practical, containers are recommended.
+Virtual servers are considered legacy and should be avoided.
 
-*We do this because we strongly believe that serverless (FaaS, BaaS, DBaaS) is the future of the cloud and we’d like to be on the forefront of that movement. Serverless might not necessarily be the right choice for everything today, but start your architecture discussions there. We’re in the process of fading out virtual servers (EC2) and want to avoid creating new ones. The benefits of serverless and containers over virtual servers are diverse: cost savings, better scaling, better orchestration, reduction of operational costs and  modernizing our cloud stack.*
+*We do this because we strongly believe that Serverless (FaaS, BaaS, DBaaS) is the future of the cloud and we’d like to be on the forefront of that movement. Serverless might not necessarily be the right choice for everything today, but start your architecture discussions there. We’re in the process of fading out virtual servers and want to avoid creating new ones. The benefits of Serverless and containers over virtual servers are diverse: simplified and faster autoscaling, better service orchestration, reduction of cloud service costs, reduction of operational costs and modernizing our cloud stack.*
 
 ## Build smaller things
 
