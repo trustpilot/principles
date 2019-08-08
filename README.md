@@ -6,6 +6,7 @@
 - **[Build smaller things](#build-smaller-things)**
 - **[Encapsulate in contexts and expose APIs](#encapsulate-in-contexts-and-expose-apis)**
 - **[Aim to Open Source](#aim-to-open-source)**
+- **[Measure it and you can improve it](#measure-it-and-you-can-improve-it)**
 
 
 > **Breaking the Rules**
@@ -50,3 +51,9 @@ We divide ownership into contexts. The context concept encapsulates one or more 
 Always apply open source best practices to all repositories, public and private ([Inner Source](https://en.wikipedia.org/wiki/Inner_source)). That typically includes a clear documentation (README) and code that isn’t tightly coupled to anything internally. Consider which pieces could be pulled out and open sourced (e.g. a general purpose library without any dependencies is a prime candidate to be open source).
 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
+
+## Measure it and you can improve it
+
+We monitor our services, we define service level indicators, objectives and setup alerting if objectives is violated. We react promptly to these alerts when they happen, to improve our service quality or adjust the alerting threshold to reflect reality. Through monitoring and alerting we strive to maintain a high service quality.
+
+*We do this to have factual knowledge that our services works as intended, rather than just a gut feeling or if no customers complains. These measures is a baseline for every change we do to our systems, either to improve performance or adding new features with no quality degradation.*
