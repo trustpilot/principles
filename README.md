@@ -6,7 +6,7 @@
 - **[Build smaller things](#build-smaller-things)**
 - **[Encapsulate in contexts and expose APIs](#encapsulate-in-contexts-and-expose-apis)**
 - **[Aim to Open Source](#aim-to-open-source)**
-- **[Measure it and you can improve it](#measure-it-and-you-can-improve-it)**
+- **[Own Your Products](#own-your-products)**
 
 
 > **Breaking the Rules**
@@ -52,7 +52,7 @@ Always apply open source best practices to all repositories, public and private 
 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
-## Own your products
+## Own Your Products
 
 Be responsible for your products, internal and external, their artifacts and their service quality. Have good observability of your products, know that state of your services and when they need attention.
 
