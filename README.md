@@ -57,3 +57,9 @@ Always apply open source best practices to all repositories, public and private 
 We monitor our services, we define service level indicators, objectives and setup alerting if objectives is violated. We react promptly to these alerts when they happen, to improve our service quality or adjust the alerting threshold to reflect reality. Through monitoring and alerting we strive to maintain a high service quality.
 
 *We do this to have factual knowledge that our services works as intended, rather than just a gut feeling or if no customers complains. These measures is a baseline for every change we do to our systems, either to improve performance or adding new features with no quality degradation.*
+
+## Observe your services
+
+Keep a pulse on the services you own. 
+
+*Sometimes generic metrics are enough, sometimes you would need something specific. Too many alerts triggered for your services? Is time to take action. Focus on self-healing and architect with soft dependencies between services.*
