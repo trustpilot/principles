@@ -52,14 +52,8 @@ Always apply open source best practices to all repositories, public and private 
 
 *We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
-## Measure it and you can improve it
+## Own your products
 
-We monitor our services, we define service level indicators, objectives and setup alerting if objectives is violated. We react promptly to these alerts when they happen, to improve our service quality or adjust the alerting threshold to reflect reality. Through monitoring and alerting we strive to maintain a high service quality.
+Be responsible for your products, internal and external, their artifacts and their service quality. Have good observability of your products, know that state of your services and when they need attention.
 
-*We do this to have factual knowledge that our services works as intended, rather than just a gut feeling or if no customers complains. These measures is a baseline for every change we do to our systems, either to improve performance or adding new features with no quality degradation.*
-
-## Observe your services
-
-Keep a pulse on the services you own. 
-
-*Sometimes generic metrics are enough, sometimes you would need something specific. Too many alerts triggered for your services? Is time to take action. Focus on self-healing and architect with soft dependencies between services.*
+*We do this because the people that build the services know them best. We are responsible for what we produce and we're proud of the work we deliver. This includes code quality, testing, documentation, infrastructure, monitoring, alerting, availability, and disaster recovery.*
