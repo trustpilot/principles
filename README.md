@@ -37,8 +37,7 @@ Generally consider making smaller rather than larger systems, services, reposito
 
 *When building small, the project is easier to reason about, and the responsibility of a service is more clearly defined. It is easier to fix bugs, and easier to deploy.*
 *It also opens up opportunities for engineers to move to other teams, new people entering the team, as well as internships on teams, as the learning and reasoning is much quicker and easier, than having to understand a very large and complex system. With complex, larger systems, a lot of knowledge gets accumulated in people's heads, and they become criticial resources, which can be a disaster if they choose to leave, or get sick for extended periods of time.*
-*While there may be an overhead by making things too small, we have generally found that it’s much easier to combine things that are too small, than to take things apart that are too large.*
-*It is perfectly fine to have multiple services and projects from the same context be in multiple repositories.*
+*There can be overhead in making things too small, but we have found that it’s much easier to combine things that are too small than to split things that are too large. It is acceptable to have a context's services and projects spread over multiple repositories.*
 
 ## Encapsulate in contexts and expose APIs
 
