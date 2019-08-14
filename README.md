@@ -54,6 +54,6 @@ Always apply open source best practices to all repositories, public and private 
 
 ## Own Your Products
 
-Be responsible for your products, internal and external, their artifacts and their service quality. Have good observability of your products, know that state of your services and when they need attention.
+Be responsible for your products, internal and external, their artifacts and their service quality. Have good observability of your products, know the state of your services and when they need attention.
 
 *We do this because the people that build the services know them best. We are responsible for what we produce and we're proud of the work we deliver. This includes code quality, testing, documentation, infrastructure, monitoring, alerting, availability, and disaster recovery.*
