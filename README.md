@@ -42,7 +42,7 @@ Generally consider making smaller rather than larger systems, services, reposito
 
 ## Encapsulate in contexts and expose APIs
 
-We divide ownership into contexts. The context concept encapsulates one or more services that are closely connected. The context is also the boundary of data ownership. This means that only services inside the context can directly work with the data it owns. The context exposes REST APIs to be be used by other contexts as well as our customers and third party services. For any API endpoint, consider first if it can be public, if not can it be private and only make it internal if none of the first two are possible.
+We divide ownership into contexts. The context concept encapsulates one or more services that are closely connected. The context is also the boundary of data ownership. This means that only services inside the context can directly work with the data it owns. The context exposes REST APIs to be used by other contexts as well as our customers and third party services. For any API endpoint, consider first if it can be public, if not can it be private and only make it internal if none of the first two are possible.
 
 *We believe that the context concept gives a good abstraction level of coherent services, that allows for full ownership, while allowing ownership to change. At the same time it’s more practical than having individual services as the isolation level. By exposing REST APIs we allow other teams or third parties to interact with and combine our products in new and interesting ways. At the same time we retain control over the underlying data for flexibility of implementation and data storage.*
 
@@ -50,7 +50,7 @@ We divide ownership into contexts. The context concept encapsulates one or more 
 
 Always apply open source best practices to all repositories, public and private ([Inner Source](https://en.wikipedia.org/wiki/Inner_source)). That typically includes a clear documentation (README) and code that isn’t tightly coupled to anything internally. Consider which pieces could be pulled out and open sourced (e.g. a general purpose library without any dependencies is a prime candidate to be open source).
 
-*We do this because code written with open source on mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
+*We do this because code written with open source in mind, is usually cleaner, better documented and not tightly coupled to anything internally. Generally it’s a good sanity check that we’re not doing anything too weird internally. Additionally, open source is a great recruiting tool for us to display our engineering culture.*
 
 ## Own Your Products
 
