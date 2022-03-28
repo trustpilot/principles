@@ -40,9 +40,11 @@ Generally consider making smaller rather than larger systems, services, reposito
 *Smaller systems allow quicker and easier learning and reasoning than larger, more complex systems. This opens up more opportunities for engineers to move between teams. Less knowledge accumulates in people's heads, reducing risk when they depart or take extended leave*
 *There can be overhead in making things too small, but we have found that it’s much easier to combine things that are too small than to split things that are too large. It is acceptable to have a context's services and projects spread over multiple repositories.*
 
-## Encapsulate in contexts and expose APIs
+## Encapsulate in contexts and expose APIs or events
 
 We divide ownership into contexts. The context concept encapsulates one or more services that are closely connected. The context is also the boundary of data ownership. This means that only services inside the context can directly work with the data it owns. The context exposes REST APIs to be used by other contexts as well as our customers and third party services. For any API endpoint, consider first if it can be public, if not can it be private and only make it internal if none of the first two are possible.
+
+A context may also optionally expose events, currently in the form of SNS-events to notify downstream systems that something has happened.
 
 *We believe that the context concept gives a good abstraction level of coherent services, that allows for full ownership, while allowing ownership to change. At the same time it’s more practical than having individual services as the isolation level. By exposing REST APIs we allow other teams or third parties to interact with and combine our products in new and interesting ways. At the same time we retain control over the underlying data for flexibility of implementation and data storage.*
 
