@@ -14,7 +14,7 @@
 
 ## Code Review Everything
 
-All production code must be reviewed, even the most trivial. Commits should be optimized for code reviews and tell a story. “Pre-review” your code before requesting a review from your peers. Review requests should be handled promptly. Pairing for infrastructure or configuration changes is recommended. While the reviewer’s input is welcomed, in the end the author decides what suggestions to implement.
+All production code must be reviewed, even the most trivial. Commits should be optimized for code reviews and tell a story. Self review your code before requesting a review from your peers. Review requests should be handled promptly. Pairing for infrastructure or configuration changes is recommended. While the reviewer’s input is welcomed, in the end the author decides what suggestions to implement.
 
 *We do this because we believe that code reviews are an imperative tool to ship quality code. This includes finding issues with the code, but also sharing alternative approaches and learning new practices. It is also great to share knowledge, so that always more than just one person knows what happened. Simple changes usually require very little reviewing effort so try to take “everything” literally. And even small changes can have very negative impacts.*
 
