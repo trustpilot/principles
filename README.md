@@ -37,7 +37,7 @@ Virtual servers are considered legacy and should be avoided.
 Generally consider making smaller rather than larger systems, services, repositories, etc.
 
 *When building small, the project is easier to reason about, and the responsibility of a service is more clearly defined. It is easier to fix bugs, and easier to deploy.*
-*Smaller systems allow quicker and easier learning and reasoning than larger, more complex systems. This opens up more opportunities for engineers to move between teams. Less knowledge accumulates in people's heads, reducing risk when they depart or take extended leave*
+*Smaller systems allow quicker and easier learning and reasoning than larger, more complex systems. This opens up more opportunities for engineers to move between teams. Less knowledge accumulates in people's heads, reducing risk when they depart or take extended leave.*
 *There can be overhead in making things too small, but we have found that it’s much easier to combine things that are too small than to split things that are too large. It is acceptable to have a context's services and projects spread over multiple repositories.*
 
 ## Encapsulate in contexts and expose APIs
